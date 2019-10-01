@@ -1,0 +1,73 @@
+<div class="card">
+    <div class="card-header">
+      Activity Signup
+    </div>
+    <div class="card-body">
+        <form [formGroup]="ActivityFormGroup" id="ActivitySForm" (ngSubmit)="onSubmit(ActivityFormGroup.value)">
+            <mat-label>Select an activity</mat-label>
+            <mat-select [(value)]="selected" formControlName="activityId" required>
+              
+              <mat-option *ngFor="let Activity of Activities" 
+                    [value]="Activity.id" >{{ Activity.name }}</mat-option>              
+            </mat-select>            
+            <div *ngIf="ActivityFormGroup.get('activityId').hasError('required')" class="error">
+                You have to select an activity
+            </div>
+                <div class="form-group">
+                    <label for="FirstName">First Name</label>
+                    <input type="text" class="form-control" name="FirstName" formControlName="FirstName" required
+                        placeholder="Enter First Name">  
+                        <div *ngIf="ActivityFormGroup.get('FirstName').hasError('pattern')" class="error">
+                            First Name has invalid characters
+                        </div>
+                        <div *ngIf="ActivityFormGroup.get('FirstName').hasError('required')" class="error">
+                            First Name is required
+                        </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="LastName">Last Name</label>
+                    <input type="text" class="form-control" name="LastName" formControlName="LastName" required
+                        placeholder="Enter Last Name"> 
+                        <div *ngIf="ActivityFormGroup.get('LastName').hasError('pattern')" class="error">
+                            Last Name has invalid characters
+                        </div>              
+                        <div *ngIf="ActivityFormGroup.get('LastName').hasError('required')" class="error">
+                            Last Name is required
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Address</label>
+                    <input type="email" class="form-control" id="Email" formControlName="Email" required
+                        placeholder="Enter Email"> 
+                        <div *ngIf="ActivityFormGroup.get('Email').hasError('email')" class="error">
+                            Please enter a valid email address
+                        </div>     
+                        <div *ngIf="ActivityFormGroup.get('Email').hasError('required')" class="error">
+                            Email is required
+                        </div>              
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone</label>
+                    <input type="Phone" class="form-control" id="Phone" formControlName="Phone" required
+                        placeholder="Enter Phone">   
+                        <div *ngIf="ActivityFormGroup.get('Phone').hasError('pattern')" class="error">
+                            Please enter valid phone number i.e 289-700-8457
+                        </div>     
+                        <div *ngIf="ActivityFormGroup.get('Email').hasError('required')" class="error">
+                            Phone is required
+                        </div>            
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Comment</label>
+                    <textarea name="Comment" id="Comment" cols="30" rows="10"
+                      class="form-control" formControlName="Comment"></textarea>
+                                          
+                </div>
+                <div class="col align-self-end">
+                    <button type="submit" [disabled]="!ActivityFormGroup.valid" class="btn btn-info">Register</button>
+                </div>   
+        </form>
+    </div>
+  </div>
+

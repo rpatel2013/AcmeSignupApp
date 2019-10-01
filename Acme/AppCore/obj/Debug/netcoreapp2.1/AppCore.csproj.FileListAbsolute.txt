@@ -1,0 +1,13 @@
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\AppCore.deps.json
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\AppCore.dll
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\AppCore.pdb
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\obj\Debug\netcoreapp2.1\AppCore.csproj.CoreCompileInputs.cache
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\obj\Debug\netcoreapp2.1\AppCore.AssemblyInfoInputs.cache
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\obj\Debug\netcoreapp2.1\AppCore.AssemblyInfo.cs
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\obj\Debug\netcoreapp2.1\AppCore.csproj.CopyComplete
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\obj\Debug\netcoreapp2.1\AppCore.dll
+C:\Users\rpatel\Documents\Assignment\Acme\AppCore\obj\Debug\netcoreapp2.1\AppCore.pdb
